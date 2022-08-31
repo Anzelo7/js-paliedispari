@@ -42,6 +42,6 @@ let sum = utente + numberPC
 //winner
 
 if (sum === pari) {
-    return true
+    return document.getElementById('numberUtente').innerHTML = 'Winner'
 } else
-    return false
+    return document.getElementById('numberPC').innerHTML = 'Winner'
