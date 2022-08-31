@@ -2,16 +2,46 @@ console.log('JS OK')
 
 //scegliere numero pari o dispari
 
-let number = parseInt(prompt('Inserisci numero:'));
+const EvenOdd = parseInt(prompt('Scegli pari o dispari:'));
 
-let numberOdd = 'pari'
-let numberEven = 'dispari'
+let pari = 'pari'
+let dispari = 'dispari'
 
-function OddEven(number) {
-    return (number % 2 === 0) ? 'pari' : 'dispari';
+
+if (pari) {
+    document.getElementById('numberUtente').innerHTML = 'pari'
+} else if (dispari) {
+    document.getElementById('numberUtente').innerHTML = 'dispari'
+} else {
+    alert(promt("Inserisci pari o dispari"));
 }
-console.log(OddEven(number));
+
 
 //inserire numero da 1 a 5
-//generare n random 1/5 usando funzione
+
+const utente = parseInt(prompt('Scegli numero da 1 a 5:'));
+
+document.getElementById('numberUtente').innerHTML = utente
+
+//computer sceglie random n da 1/5
+
+let computer = Math.floor(Math.random() * 4) + 1;;
+
+const numberPC = []
+
+function addNumber(numberPC) {
+    while (numberPC.length < 5)
+
+        return numberPC = Math.floor(Math.random() * 4) + 1;;
+}
+console.log(addNumber(numberPC));
+document.getElementById('numberPC').innerHTML = numberPC
+
 //somma dei numeri pari o dispari
+let sum = utente + numberPC
+//winner
+
+if (sum === pari) {
+    return true
+} else
+    return false
