@@ -41,7 +41,7 @@ document.getElementById('numberPC').innerHTML = numberPC
 let sum = utente + numberPC
 //winner
 
-if (sum === pari) {
-    return document.getElementById('numberUtente').innerHTML = 'Winner'
+if (sum % 2 === 0) {
+    document.getElementById('numberUtente').innerHTML = 'Winner'
 } else
-    return document.getElementById('numberPC').innerHTML = 'Winner'
+    document.getElementById('numberPC').innerHTML = 'Winner'
